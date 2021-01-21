@@ -1,0 +1,141 @@
+// *{
+//     margin: 0;
+//     padding: 0;
+//     font-family: 'Popins', sans-serif;
+// }
+// body
+// {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     background: #16384c;
+// }
+.product {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+.product .card {
+    position: relative;
+    max-width: 300px;
+    height: 215px; // chieu cao luc  dau
+    background: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+    z-index: 99;
+}
+.product-body {
+    height: 420px;
+    margin-bottom: 100px;
+    position: relative;
+    // opacity: 1;
+    // visibility: visible;
+
+    .cusContent {
+        position: absolute;
+        top: 260px;
+        text-align: center;
+        margin: 5px 20px;
+        h3 {
+            font-size: 15px;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-family: "Poppins", Arial, sans-serif;
+            color: #000000;
+        }
+        p {
+            font-size: 15px;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-family: "Poppins", Arial, sans-serif;
+            color: #000000;
+            opacity: 0.5;
+        }
+    }
+}
+.product .card:hover {
+    height: 420px; // chieu cao luc hover
+}
+.product .card:hover .imgBx {
+    transform: scale(1.1);
+    transition: 0.4s ease;
+}
+.product .card .imgBx {
+    position: relative;
+    width: 260px;
+    height: 200px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    transition: 0.4s ease 0.3s;
+}
+.product .card .imgBx img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+.product .card .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s ease;
+}
+.product .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition: 0.4s;
+}
+.content-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i {
+        font-size: 15px;
+        background: #82ae46;
+        border-radius: 50px 50px;
+        background-image: moccasin;
+        height: 40px;
+        width: 40px;
+        color: white;
+        /* margin: 0 auto; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 5px;
+        cursor: pointer;
+    }
+    i:hover {
+        background: tomato;
+    }
+}
+.content-price {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    span {
+        margin: 10px 10px;
+    }
+}
+.content-view {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    h6 {
+        margin: 10px 10px;
+    }
+}

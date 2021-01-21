@@ -1,0 +1,27 @@
+.Testimony{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    span{
+        font-size: 18px;
+        display: block;
+        font-family: "Lora", Georgia, serif;
+        font-style: italic;
+        color: #82ae46;
+        margin-bottom: 10px;
+      
+    }
+    h2{
+        position: relative;
+        font-size: 40px;
+        font-weight: 600;
+        color: #000000;
+        font-family: "Poppins", Arial, sans-serif;
+        margin-bottom: 20px;
+      
+    }
+    p{
+        opacity: 0.5;
+      
+    }
+}
